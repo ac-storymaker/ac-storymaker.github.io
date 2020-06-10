@@ -11,6 +11,7 @@ var textAr = [];
 var openClose = ['opening-distracted','closing','closing-tilt']
 
 var sceneMaxFrameDict = {
+	"opening":37,
 	"opening-distracted":60,
 	"smiling":18,
 	"question-mark":22,
