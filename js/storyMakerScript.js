@@ -98,7 +98,7 @@ function allFrameCounter(divisor=1){
 	    //maxLength = sceneMaxFrame[sceneNum];
 	    var sceneReaction = searchCertainCookie("reaction",sceneNum);
 	    var sceneSpeech = searchCertainCookie("speech",sceneNum);
-	    if(!sceneReaction || isNaN(sceneReaction)){
+	    if(!sceneReaction){
 	    	break;
 	    }
 
@@ -960,7 +960,7 @@ function constructGIF()
 			var imgUrl = image;
 			var albumId = 'OeC4jum'; // Your owned album id
 
-			//uploadImageImgur(imgUrl);
+			uploadImageImgur(imgUrl);
 
 
 		    document.getElementById('gifOutputDiv').appendChild(animatedImage);
@@ -983,36 +983,36 @@ function uploadImageImgur(imgUrl)
 
 	imgUrl = imgUrl.replace("data:image/gif;base64,","")
 
-$.ajax({
-	    url: 'https://api.imgur.com/3/image',
-	    type: 'post',
-	    headers: {
-	        Authorization: 'Client-ID 566721a01a10a6c'
-	    },
-	    data: {
-	        image: imgUrl,
+	$.ajax({
+		    url: 'https://api.imgur.com/3/image',
+		    type: 'post',
+		    headers: {
+		        Authorization: 'Client-ID 566721a01a10a6c'
+		    },
+		    data: {
+		        image: imgUrl,
 
-	    },
-	    dataType: 'json',
-	    async: false, 
-	    success: function(response) {
-	        if(response.success) {
-	        	var timeStr = new Date().toLocaleString("en-US", {timeZone: "America/New_York",hour12:false});
-	        	var month = timeStr.split(",")[0].split("/")[0]
-	        	var day = timeStr.split(",")[0].split("/")[1]
-	        	var year = timeStr.split(",")[0].split("/")[2]
+		    },
+		    dataType: 'json',
+		    async: false, 
+		    success: function(response) {
+		        if(response.success) {
+		        	var timeStr = new Date().toLocaleString("en-US", {timeZone: "America/New_York",hour12:false});
+		        	var month = timeStr.split(",")[0].split("/")[0]
+		        	var day = timeStr.split(",")[0].split("/")[1]
+		        	var year = timeStr.split(",")[0].split("/")[2]
 
-	        	var dateRearanged = year + "/" + month + "/" + day;
-	        	var currentdate = dateRearanged + "," + timeStr.split(",")[1]; 
+		        	var dateRearanged = year + "-" + month + "-" + day;
+		        	var currentdate = dateRearanged + " : " + timeStr.split(",")[1]; 
 
-				firebaseRef.child(currentdate).set({URL:response.data.link,Read:'N'});
-	        }
-	    },
-	    error: function(xhr, status, error) {
-	    	alert('We encounterd an ajax error');
-		    alert(xhr.responseText);
-		}
-	});
+					firebaseRef.child(currentdate).set({URL:response.data.link,Read:'N'});
+		        }
+		    },
+		    error: function(xhr, status, error) {
+		    	alert('We encounterd an ajax error');
+			    alert(xhr.responseText);
+			}
+		});
 
 }
 
