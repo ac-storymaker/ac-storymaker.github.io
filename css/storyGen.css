@@ -1,0 +1,66 @@
+#homeScreenStory{
+    width:1240px;
+    height:700px;
+}
+@font-face {
+    font-family: FOT-Seurat;
+    src: url("../font/FOT-Seurat Pro EB.otf");
+}
+
+
+
+
+#container{
+    position: relative;
+    width: 1140px;
+    height: 700px;
+}
+
+#edit_text_box{
+    position:absolute;
+    max-width:63%;
+    top:67%;
+    left: 23%;
+    color:#706155;
+    font-family: 'FOT-Seurat';
+    letter-spacing: -1px;
+    font-weight: 3;
+    text-align:left;
+
+}
+
+#edit_speaker_box{
+    position:absolute;
+    width:300px;
+    bottom:32%;
+    left: 7%;
+    font-family: 'FOT-Seurat';
+    letter-spacing: -1px;
+    font-weight: 3;
+}
+
+#temp_text_box_img{
+    position: absolute;
+    width:100%;
+    height:200px;
+ 
+    bottom: 1%;
+    left: 5%;
+
+
+}
+
+
+#startNewStoryGIFBut{
+    width:240px; 
+    right:10px; 
+    top:70px; 
+    position:absolute;
+}
+
+
+#whatIsThisGIFGenBut{
+    left:10px; 
+    top:70px; 
+    position:absolute;
+}
