@@ -19,7 +19,13 @@ var sceneMaxFrameDict = {
 	"shock-and-embarrased":60,
 	"closing":29,
 	"love":36,
-	"idle":32,
+	"idle":34,
+	"thinking":32,
+	"happy-flash":27,
+	"closing-tilt":34,
+	"idea":19,
+	"notice":23,
+
 }
 
 var totalStrLengthLimit = 150;
