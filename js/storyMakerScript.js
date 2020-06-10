@@ -129,7 +129,7 @@ function determineCutOffLength(strInput){
 
 function selectSmoothness(){
 	if(document.getElementById('smoothnessLevelShift').value == 'max'){
-		$('#gifIntervalSelect').val('0.1').change();
+		$('#gifIntervalSelect').val('0.05').change();
 		$('#frameSkipSelector').val('0').change();	
 	} else {
 		$('#gifIntervalSelect').val('0.25').change();
@@ -931,7 +931,7 @@ function saveCurrentScene()
 
 function constructGIF()
 {	
-	alert("Starting");
+	//alert("Starting");
 
 	if(urlAr == null || urlAr.length <= 0){
 		alert('You need to save at least one frame before generating the GIF');
