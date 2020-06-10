@@ -98,6 +98,10 @@ function allFrameCounter(divisor=1){
 	    //maxLength = sceneMaxFrame[sceneNum];
 	    var sceneReaction = searchCertainCookie("reaction",sceneNum);
 	    var sceneSpeech = searchCertainCookie("speech",sceneNum);
+	    if(!sceneReaction || isNaN(sceneReaction)){
+	    	break;
+	    }
+
 	    var maxLength = sceneMaxFrameDict[sceneReaction];
 	    //alert(i+" "+sceneReaction);
 		frameCount += maxLength;
@@ -943,7 +947,7 @@ function constructGIF()
 		'interval': intervalForGIF,
 		'gifWidth': gifWidth,
 		'gifHeight': gifHeight,
-		'text': 'Create your own Animal Crossing GIF at ( llsif-waifu-sim.github.io )',
+		'text': 'Create your own Animal Crossing GIF at ( ac-storymaker.github.io )',
 		'fontFamily':'FOT-Seurat',
 		'fontSize': '10px',
 		'textBaseline': 'top'
