@@ -20,6 +20,7 @@ var sceneMaxFrameDict = {
 	"closing":29,
 	"love":36,
 	"idle":34,
+	"nod":34,
 	"thinking":32,
 	"happy-flash":27,
 	"closing-tilt":34,
