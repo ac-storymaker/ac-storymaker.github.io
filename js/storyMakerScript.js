@@ -496,7 +496,7 @@ function storeSceneCookie(messageOff)
 	//cookieStr = cookieStr.concat($("#gifIntervalSelect :selected").val(), "|"); //gifIntervalSelect
 	//cookieStr = cookieStr.concat($("#frameSkipSelector :selected").val(), "|"); //frameSkipSelector
 
-	alert(cookieStr);
+	//alert(cookieStr);
 	setCookie("sceneMaker_frame-".concat(sceneNum), cookieStr, cookieExpireDate);
 
 	// save main image
