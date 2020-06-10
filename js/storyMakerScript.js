@@ -75,6 +75,8 @@ function updateReaction(){
 	var path = './frameChoice/template/interface/'+ $("#reactionSelect :selected").val() +'/0.png';
 	document.getElementById('homeScreenStory').src = path;
 	document.getElementById('reactionFrameNumDiv').innerHTML = getCurrSceneFrame($("#reactionSelect :selected").val());
+	document.getElementById('reactionGIFImg').src = './frameChoice/template/gif/'+ $("#reactionSelect :selected").val() +'/0.gif';
+
 
 	// Disable if opening / closing, else we just show
 	if(openClose.includes($("#reactionSelect :selected").val())){
@@ -1364,6 +1366,7 @@ function sceneMakerInitalization()
 	
 	loadSceneCookie();
 	loadNumOfScene();
+	document.getElementById('reactionGIFImg').src = './frameChoice/template/gif/'+ $("#reactionSelect :selected").val() +'/0.gif';
 
 
 
