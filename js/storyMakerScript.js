@@ -1384,7 +1384,7 @@ function sceneMakerInitalization()
 	loadNumOfScene();
 	document.getElementById('reactionGIFImg').src = './frameChoice/template/gif/'+ $("#reactionSelect :selected").val() +'/0.gif';
 	updateAllFrameCounter();
-	document.getElementById('loadingAppDiv').innerHTML = "";
+	//document.getElementById('loadingAppDiv').innerHTML = "";
 
 	//$("#smoothnessTextSelect").selectpicker('hide');
 	//document.getElementById('smoothnessLabelHide').style.display = "none";
