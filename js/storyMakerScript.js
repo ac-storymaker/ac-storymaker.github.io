@@ -95,7 +95,7 @@ function updateReaction(){
 	} else {
 		$('#story-textfield').prop('disabled',false);
 	}
-	document.getElementById('loadingAppDiv').innerHTML = "";
+	//document.getElementById('loadingAppDiv').innerHTML = "";
 
 }
 
@@ -610,7 +610,7 @@ function changeScene()
 	}
 	document.getElementById('sceneNum_box').innerHTML = "Frame ".concat(sceneNum);
 	document.getElementById('sceneLoading_box').innerHTML = "";
-
+	document.getElementById('loadingAppDiv').innerHTML = "";
 }
 
 document
@@ -823,6 +823,7 @@ function addStoryText()
 	// Display text
 	document.getElementById('edit_text_box').innerHTML = tempStr;
 	document.getElementById("story-textfield").value = tempStr;
+	document.getElementById('loadingAppDiv').innerHTML = "";
 }
 
 
