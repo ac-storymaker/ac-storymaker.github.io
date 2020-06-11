@@ -73,6 +73,10 @@ var gifWidth = 600;
 var gifHeight = 360;
 
 
+$(window).on('load',function(){
+        $('#whatIsThisGIFGenModal').modal('show');
+    });
+
 function updateReaction(){
 	var path = './frameChoice/template/interface/'+ $("#reactionSelect :selected").val() +'/0.png';
 	document.getElementById('homeScreenStory').src = path;
