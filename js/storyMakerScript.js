@@ -694,9 +694,10 @@ function addNewScene(alertShow=true)
 	var x = document.getElementById('story-line-select-option');
 	var option = document.createElement("option");
 
-	var	declareInt = option.length + 1
-	if(maxNumOfScene == option.length){
+	var	declareInt = x.length + 1
+	if(maxNumOfScene == x.length){
 			declareInt = maxNumOfScene + 1; 
+			maxNumOfScene += 1;
 	} 
 	
 
