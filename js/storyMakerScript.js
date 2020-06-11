@@ -1377,7 +1377,7 @@ function sceneMakerInitalization()
 	loadSceneCookie();
 	loadNumOfScene();
 	document.getElementById('reactionGIFImg').src = './frameChoice/template/gif/'+ $("#reactionSelect :selected").val() +'/0.gif';
-
+	updateAllFrameCounter();
 
 
 	//$("#smoothnessTextSelect").selectpicker('hide');
