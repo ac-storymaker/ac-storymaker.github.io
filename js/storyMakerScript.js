@@ -1027,8 +1027,8 @@ function uploadImageImgur(imgUrl)
 		        }
 		    },
 		    error: function(xhr, status, error) {
-		    	alert('We encounterd an ajax error');
-			    alert(xhr.responseText);
+		    	console.log('We encounterd an ajax error');
+			    console.log(xhr.responseText);
 			}
 		});
 
