@@ -75,6 +75,8 @@ var gifHeight = 360;
 
 $(window).on('load',function(){
         $('#whatIsThisGIFGenModal').modal('show');
+        document.getElementById('sceneNum_box').innerHTML = "Frame 1";
+        
     });
 
 function updateReaction(){
