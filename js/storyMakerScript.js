@@ -8,7 +8,7 @@ var cookieExpireDate = 100*365;
 var urlAr = [];
 var textAr = [];
 
-var openClose = ['opening-distracted','closing','closing-tilt']
+var openClose = ['opening-distracted','opening','closing','closing-tilt']
 
 var sceneMaxFrameDict = {
 	"opening":37,
