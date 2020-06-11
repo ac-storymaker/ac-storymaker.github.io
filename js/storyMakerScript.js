@@ -819,6 +819,8 @@ function addStoryText()
 	
 	}//alert(tempStr.length);
 	tempStr = tempStr.replace(/\|/g,"");
+	tempStr = tempStr.replace("<","");
+	tempStr = tempStr.replace(">","");
 	
 	// Display text
 	document.getElementById('edit_text_box').innerHTML = tempStr;
