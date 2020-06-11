@@ -102,7 +102,7 @@ function allFrameCounter(divisor=1){
 	// Count number of frames in current animation
 
 	var frameCount = 0;
-	for(var sceneNum=1; sceneNum-1 < maxNumOfScene; sceneNum++)
+	for(var sceneNum=1; sceneNum <= maxNumOfScene; sceneNum++)
 	{
 
 	    //maxLength = sceneMaxFrame[sceneNum];
