@@ -677,7 +677,7 @@ function deleteAllStoryCookiesAndLocalStorage()
 	
     
 	loadSceneCookie();
-
+	updateAllFrameCounter();
 	//speakerResize();
 	//loadTotalFrameList();
 }
