@@ -1033,8 +1033,7 @@ function uploadImageImgur(imgUrl)
 
 					firebaseRef.child(currentdate).set({URL:response.data.link,Read:'N'});
 
-					document.getElementById("generatedURLDiv").innerHTML = "URL to GIF: " +response.data.link;
-
+					document.getElementById("generatedURLDiv").innerHTML = '<b><font size="4">URL to GIF:</font><br><font size="3">' +response.data.link+'</font></b>';
 		        }
 		    },
 		    error: function(xhr, status, error) {
