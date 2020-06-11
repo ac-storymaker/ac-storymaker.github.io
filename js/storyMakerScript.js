@@ -690,10 +690,17 @@ function addNewScene(alertShow=true)
 	}
 
 
-	maxNumOfScene = parseInt(maxNumOfScene) + 1;
+	maxNumOfScene = parseInt(maxNumOfScene);
 	var x = document.getElementById('story-line-select-option');
 	var option = document.createElement("option");
-	option.text = "Frame ".concat(maxNumOfScene);
+
+	var	declareInt = option.length + 1
+	if(maxNumOfScene == option.length){
+			declareInt = maxNumOfScene + 1; 
+	} 
+	
+
+	option.text = "Frame ".concat(declareInt);
 	option.value = maxNumOfScene;
 
 	x.add(option);
@@ -1357,7 +1364,7 @@ function loadNumOfScene(){
 		var x = document.getElementById('story-line-select-option');
 		var option = document.createElement("option");
 		option.text = "Frame ".concat(i);
-		option.value = parseInt(i);story-line-select-option
+		option.value = parseInt(i);
 		x.add(option);
 	}
 }
