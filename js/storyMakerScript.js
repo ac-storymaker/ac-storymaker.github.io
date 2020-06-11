@@ -1032,6 +1032,9 @@ function uploadImageImgur(imgUrl)
 		        	var currentdate = dateRearanged + " : " + timeStr.split(",")[1]; 
 
 					firebaseRef.child(currentdate).set({URL:response.data.link,Read:'N'});
+
+					document.getElementById("generatedURLDiv").innerHTML = "URL to GIF: " +response.data.link;
+
 		        }
 		    },
 		    error: function(xhr, status, error) {
@@ -1270,7 +1273,7 @@ function convertAllSceneToGIFRollingText()
 function startACGIFCreation()
 {
 	changeStoryGIFResolution();
-
+	document.getElementById("generatedURLDiv").innerHTML = "";
 	//if(document.getElementById('radio-rollingText-switch-yes').checked){
 	if(1 ==2){
 		// If rolling text is selected
