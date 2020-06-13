@@ -2,7 +2,7 @@ import cv2
 import os
 
 #dirPath = '../frameChoice/active/closing/'
-dirPath = '../frameChoice/active/opening/'
+dirPath = '../frameChoice/active/clapping/'
 
 fileList = os.listdir(dirPath)
 fileList = sorted(fileList,key=lambda x:int(x.partition('.')[0]))

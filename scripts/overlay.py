@@ -5,7 +5,7 @@ from time import time
 
 
 #dirPath = '../frameChoice/active/closing/'
-dirPath = '../frameChoice/active/thinking/'
+dirPath = '../frameChoice/active/clapping/'
 
 #templateImg = cv2.imread("../frameChoice/template/transparent/morning-0.png", -1) # this one has transparency
 templateImg = cv2.imread("../frameChoice/template/transparent/morning-0.png", -1) # this one has transparency
@@ -19,6 +19,8 @@ for i,fileName in enumerate(fileList):
     print(i,'/',len(fileList))
 
     img1 = cv2.imread(dirPath + fileName,-1)
+    img1 = cv2.resize(img1, (640,360), interpolation = cv2.INTER_AREA)
+
     result = np.zeros((h, w, 3), np.uint8)
 
 

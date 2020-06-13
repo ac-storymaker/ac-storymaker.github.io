@@ -27,6 +27,7 @@ var sceneMaxFrameDict = {
 	"closing-tilt":34,
 	"idea":19,
 	"notice":23,
+	"clapping":44,
 
 }
 
