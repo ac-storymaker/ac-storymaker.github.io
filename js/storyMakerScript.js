@@ -78,6 +78,18 @@ $(window).on('load',function(){
         document.getElementById('loadingAppDiv').innerHTML = "";
         document.getElementById('sceneNum_box').innerHTML = "Frame 1";
         
+
+        var vid0 = document.getElementById("introVid0");
+        var vid1 = document.getElementById("introVid1");
+        var vid2 = document.getElementById("introVid2");
+        var vid3 = document.getElementById("introVid3");
+
+        vid0.play();
+        vid1.play();
+        vid2.play();
+        vid3.play();
+
+
     });
 
 function updateReaction(){
