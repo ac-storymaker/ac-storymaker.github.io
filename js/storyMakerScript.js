@@ -21,6 +21,7 @@ var sceneMaxFrameDict = {
 	"closing":29,
 	"love":36,
 	"idle":34,
+	"idle-brighter":36,
 	"nod":34,
 	"thinking":32,
 	"happy-flash":27,
@@ -28,6 +29,8 @@ var sceneMaxFrameDict = {
 	"idea":19,
 	"notice":23,
 	"clapping":44,
+	"yawn":34,
+	"exclaimation-mark":18,
 
 }
 

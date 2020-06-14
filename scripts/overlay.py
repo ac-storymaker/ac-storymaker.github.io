@@ -5,7 +5,7 @@ from time import time
 
 
 #dirPath = '../frameChoice/active/closing/'
-dirPath = '../frameChoice/active/yawn/'
+dirPath = '../frameChoice/active/idle-arms-down/'
 
 #templateImg = cv2.imread("../frameChoice/template/transparent/morning-0.png", -1) # this one has transparency
 templateImg = cv2.imread("../frameChoice/template/transparent/morning-0.png", -1) # this one has transparency
